@@ -38,4 +38,4 @@ df = pd.DataFrame(data={
     'col 2': s2,}
 )
 
-print(df.loc[df['col 2'] > 4])
+print(df.loc[df['col 2'] > 4, ['col 2']])
