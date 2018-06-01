@@ -21,3 +21,8 @@ df2 = make_df('ADE', range(3))
 # %%
 
 print(pd.merge(df1, df2, ))
+
+# %%
+
+# joins on index
+print(df1.set_index('A').join(df2.set_index('A')))
